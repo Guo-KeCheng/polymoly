@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://<aws endpoint>/<db name>
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
